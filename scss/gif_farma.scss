@@ -1,0 +1,16 @@
+                 /* posicionamiento del gif */
+                 
+                 .farma {
+                     & a {
+                         position: relative;
+                         bottom: 0;
+                         right: 20px;
+                     }
+                 }
+                 
+                 .popup {
+                     position: fixed;
+                     bottom: 0;
+                     right: 0;
+                     font-size: 30px;
+                 }

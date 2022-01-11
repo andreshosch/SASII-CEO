@@ -1,0 +1,12 @@
+@media screen and (max-width:690px) {
+    .titulo_logo h3 {
+        display: none;
+        & img {
+            width: 30px;
+            height: 30px;
+        }
+        .imagen {
+            min-width: 110%;
+        }
+    }
+}

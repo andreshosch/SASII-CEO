@@ -1,0 +1,301 @@
+.estilo_barra {
+  background-color: #7fffd4;
+  text-transform: uppercase;
+  grid-area: barra; }
+  .estilo_barra a:hover {
+    background-color: #6495ed; }
+
+body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+.fondo_body {
+  background-color: skyblue; }
+
+.estilos_enlaces {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 40px; }
+  .estilos_enlaces img:hover {
+    transform: scale(1.2); }
+
+/*mixim para el color y tipo de fuente del footer y seccion redes sociales*/
+.color_footer {
+  background-color: #deb887;
+  color: black; }
+
+.color_redes {
+  background-color: #faebd7;
+  color: black; }
+
+.iconos_redes div {
+  margin-left: 1.5rem;
+  justify-content: left; }
+  .iconos_redes div :hover {
+    transform: scale(1.1); }
+
+.iconos_redes h6 {
+  display: inline;
+  font-size: 15px; }
+
+.contacto {
+  float: left;
+  text-align: left;
+  margin-left: 65px;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: saddlebrown; }
+
+/* map para el colorde los enlaces h6 en la seccion categorias */
+.categorias {
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: saddlebrown;
+  margin-right: 30px; }
+  .categorias h6 {
+    font-size: 12px;
+    margin-top: 20px;
+    color: saddlebrown; }
+  .categorias a {
+    text-decoration: none; }
+    .categorias a :hover {
+      background-color: sienna;
+      color: white; }
+
+.ubicacion {
+  float: right;
+  text-align: right;
+  color: saddlebrown; }
+
+.copyright {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 2rem;
+  color: black; }
+
+.boton_buscar {
+  background-color: lightgreen; }
+  .boton_buscar :hover {
+    background-color: green; }
+
+/* imagenes tipo baner */
+.imagen {
+  height: auto;
+  width: 100%;
+  padding-top: 1rem; }
+
+.titulo_logo h3 {
+  display: inline; }
+
+/* reseteo de margenes*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@media screen and (max-width: 690px) {
+  .titulo_logo h3 {
+    display: none; }
+    .titulo_logo h3 img {
+      width: 30px;
+      height: 30px; }
+    .titulo_logo h3 .imagen {
+      min-width: 110%; } }
+
+/*productos para la venta */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1%;
+  border-color: green;
+  background-color: azure; }
+  .productos div {
+    margin-top: 2%; }
+    .productos div:hover {
+      opacity: 80%; }
+  .productos h4 {
+    color: red;
+    font-size: solid;
+    text-align: left; }
+  .productos .color_boton_producto {
+    background-color: lawngreen;
+    color: black; }
+
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none; }
+
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto; }
+
+.modalDialog > div {
+  width: 350px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in; }
+  .modalDialog > div .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000; }
+  .modalDialog > div .close:hover {
+    background: #00d9ff; }
+  .modalDialog > div .logueo input {
+    background-color: #d4f1f1; }
+  .modalDialog > div .logueo label {
+    margin-right: 1%;
+    color: cadetblue; }
+  .modalDialog > div h4 {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    color: cadetblue;
+    font-size: 20px; }
+
+.linea_vertical {
+  border-right: white;
+  margin-right: 50%;
+  height: 300px; }
+
+.boton_logueo {
+  padding-top: 10%; }
+  .boton_logueo input {
+    background-color: #606061;
+    border-radius: 1%;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    text-align: center; }
+  .boton_logueo :hover {
+    background-color: #00d9ff; }
+
+/* posicionamiento del gif */
+.farma a {
+  position: relative;
+  bottom: 0;
+  right: 20px; }
+
+.popup {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 30px; }
+
+.contenedor {
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas: "header header" "barra barra" "foto1 info1" "info2 foto2" "foto3 info3" "info4 foto4" "footer footer";
+  margin: 10px auto; }
+
+/* corresponden al html farmatips y conocenos */
+.header {
+  grid-area: header;
+  background-color: white; }
+
+.barra {
+  grid-area: barra; }
+
+/* extend de las fotos en conocenos.html*/
+.fotos_grid, .foto1, .foto2, .foto3, .foto4 {
+  padding-top: 50px; }
+  .fotos_grid div, .foto1 div, .foto2 div, .foto3 div, .foto4 div {
+    text-align: center; }
+  .fotos_grid img, .foto1 img, .foto2 img, .foto3 img, .foto4 img {
+    width: 400px;
+    height: 400px; }
+
+.foto1 {
+  grid-area: foto1; }
+
+.foto2 {
+  grid-area: foto2; }
+
+.foto3 {
+  grid-area: foto3; }
+
+.foto4 {
+  grid-area: foto4; }
+
+.tips1 {
+  grid-area: info1;
+  padding-top: 50px; }
+  .tips1 div {
+    margin-top: 5%;
+    margin-right: 10%; }
+  .tips1 p {
+    color: green;
+    font-size: 30px;
+    font-family: 'Waterfall'; }
+
+.tips2 {
+  grid-area: info2;
+  padding-top: 50px; }
+  .tips2 div {
+    margin-top: 5%;
+    margin-left: 10%; }
+  .tips2 p {
+    color: green;
+    font-size: 30px;
+    font-family: 'Waterfall'; }
+
+.tips3 {
+  grid-area: info3;
+  padding-top: 50px; }
+  .tips3 div {
+    margin-top: 5%;
+    margin-right: 10%; }
+  .tips3 p {
+    color: green;
+    font-size: 30px;
+    font-family: 'Waterfall'; }
+
+.tips4 {
+  grid-area: info4;
+  padding-top: 50px; }
+  .tips4 div {
+    margin-top: 5%;
+    margin-left: 10%; }
+  .tips4 p {
+    color: green;
+    font-size: 30px;
+    font-family: 'Waterfall'; }
+
+.footer {
+  grid-area: footer; }

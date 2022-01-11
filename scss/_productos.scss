@@ -1,0 +1,25 @@
+/*productos para la venta */
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1%;
+    border-color: green;
+    background-color: $bg_cian;
+    & div {
+        margin-top: 2%;
+        &:hover {
+            opacity: 80%;
+        }
+    }
+    & h4 {
+        color: red;
+        font-size: solid;
+        text-align: left;
+    }
+    .color_boton_producto {
+        background-color: $bg_verdecito;
+        color: black;
+    }
+}

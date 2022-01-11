@@ -1,0 +1,103 @@
+        /* corresponden al html farmatips y conocenos */
+        
+        .header {
+            grid-area: header;
+            background-color: white;
+        }
+        
+        .barra {
+            grid-area: barra;
+            ;
+        }
+        /* extend de las fotos en conocenos.html*/
+        
+        .fotos_grid {
+            padding-top: 50px;
+            & div {
+                text-align: center;
+            }
+            & img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+        
+        .foto1 {
+            @extend .fotos_grid;
+            grid-area: foto1;
+        }
+        
+        .foto2 {
+            @extend .fotos_grid;
+            grid-area: foto2;
+        }
+        
+        .foto3 {
+            @extend .fotos_grid;
+            grid-area: foto3;
+        }
+        
+        .foto4 {
+            @extend .fotos_grid;
+            grid-area: foto4;
+        }
+        
+        .tips1 {
+            grid-area: info1;
+            padding-top: 50px;
+            & div {
+                margin-top: 5%;
+                margin-right: 10%;
+            }
+            & p {
+                color: green;
+                font-size: 30px;
+                font-family: 'Waterfall';
+            }
+        }
+        
+        .tips2 {
+            grid-area: info2;
+            padding-top: 50px;
+            & div {
+                margin-top: 5%;
+                margin-left: 10%;
+            }
+            & p {
+                color: green;
+                font-size: 30px;
+                font-family: 'Waterfall';
+            }
+        }
+        
+        .tips3 {
+            grid-area: info3;
+            padding-top: 50px;
+            & div {
+                margin-top: 5%;
+                margin-right: 10%;
+            }
+            & p {
+                color: green;
+                font-size: 30px;
+                font-family: 'Waterfall';
+            }
+        }
+        
+        .tips4 {
+            grid-area: info4;
+            padding-top: 50px;
+            & div {
+                margin-top: 5%;
+                margin-left: 10%;
+            }
+            & p {
+                color: green;
+                font-size: 30px;
+                font-family: 'Waterfall';
+            }
+        }
+        
+        .footer {
+            grid-area: footer;
+        }

@@ -1,0 +1,73 @@
+                      /*mixim para el color y tipo de fuente del footer y seccion redes sociales*/
+                      
+                      @mixin footer_redes ($bgcolor) {
+                          background-color: $bgcolor;
+                          color: black;
+                      }
+                      
+                      .color_footer {
+                          @include footer_redes($bg_madera);
+                      }
+                      
+                      .color_redes {
+                          @include footer_redes($bg_blanco);
+                      }
+                      
+                      .iconos_redes {
+                          & div {
+                              margin-left: 1.5rem;
+                              justify-content: left;
+                              & :hover {
+                                  transform: scale(1.1);
+                              }
+                          }
+                          & h6 {
+                              display: inline;
+                              font-size: 15px;
+                          }
+                      }
+                      
+                      .contacto {
+                          float: left;
+                          text-align: left;
+                          margin-left: 65px;
+                          font-size: 30px;
+                          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                          color: saddlebrown;
+                      }
+                      /* map para el colorde los enlaces h6 en la seccion categorias */
+                      
+                      $enlaces_footer:( enlace:saddlebrown);
+                      $enlace:map-get($enlaces_footer, enlace);
+                      .categorias {
+                          display: inline-block;
+                          font-size: 30px;
+                          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                          color: saddlebrown;
+                          margin-right: 30px;
+                          & h6 {
+                              font-size: 12px;
+                              margin-top: 20px;
+                              color: $enlace;
+                          }
+                          & a {
+                              text-decoration: none;
+                              & :hover {
+                                  background-color: sienna;
+                                  color: white;
+                              }
+                          }
+                      }
+                      
+                      .ubicacion {
+                          float: right;
+                          text-align: right;
+                          color: saddlebrown;
+                      }
+                      
+                      .copyright {
+                          text-align: center;
+                          font-size: 15px;
+                          margin-top: 2rem;
+                          color: black;
+                      }

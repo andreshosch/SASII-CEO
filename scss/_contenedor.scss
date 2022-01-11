@@ -1,0 +1,8 @@
+.contenedor {
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "header header" "barra barra" "foto1 info1""info2 foto2""foto3 info3""info4 foto4""footer footer";
+    margin: 10px auto;
+}

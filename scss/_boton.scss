@@ -1,0 +1,6 @@
+.boton_buscar {
+    background-color: lightgreen;
+    & :hover {
+        background-color: green;
+    }
+}
